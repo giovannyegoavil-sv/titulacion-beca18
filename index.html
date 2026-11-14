@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Guia practica del beneficio de titulacion de Pronabec para becarios de Beca 18 en la USIL: plazos, montos, pasos del reembolso y errores que cuestan dinero.">
+<meta name="robots" content="noindex">
+<style>
+  :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Titulación Beca 18 USIL</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: single reading column, max 760px; the deadline section runs on a vertical rule that acts as the "clock" spine. */
+:root{
+  --paper:#F6F8FB;
+  --surface:#FFFFFF;
+  --surface-2:#EDF1F7;
+  --ink:#131B26;
+  --ink-soft:#56657C;
+  --line:#DCE3EC;
+  --accent:#1B4FD8;
+  --accent-soft:#E7EDFD;
+  --warn:#9A5B06;
+  --warn-soft:#FCF2E2;
+  --warn-line:#E8C489;
+  --danger:#AD1F1F;
+  --danger-soft:#FBEBEB;
+  --danger-line:#E8B4B4;
+  --good:#0F6E4A;
+  --good-soft:#E2F3EC;
+  --good-line:#A5D6C2;
+  --font-head:"Archivo","Segoe UI",system-ui,sans-serif;
+  --font-body:"Inter","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1218;
+    --surface:#151D26;
+    --surface-2:#1D2731;
+    --ink:#E9EEF5;
+    --ink-soft:#9BA9BD;
+    --line:#2A3542;
+    --accent:#86A8FF;
+    --accent-soft:#1A2742;
+    --warn:#E8A647;
+    --warn-soft:#2B2318;
+    --warn-line:#4D3C1E;
+    --danger:#F08C84;
+    --danger-soft:#2F1F1E;
+    --danger-line:#53302E;
+    --good:#5ED3A4;
+    --good-soft:#132A21;
+    --good-line:#265243;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1218;
+  --surface:#151D26;
+  --surface-2:#1D2731;
+  --ink:#E9EEF5;
+  --ink-soft:#9BA9BD;
+  --line:#2A3542;
+  --accent:#86A8FF;
+  --accent-soft:#1A2742;
+  --warn:#E8A647;
+  --warn-soft:#2B2318;
+  --warn-line:#4D3C1E;
+  --danger:#F08C84;
+  --danger-soft:#2F1F1E;
+  --danger-line:#53302E;
+  --good:#5ED3A4;
+  --good-soft:#132A21;
+  --good-line:#265243;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:760px;
+  margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:28px 64px;
+}
+h1,h2,h3,h4{font-family:var(--font-head);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(28px,6vw,40px);font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(20px,4vw,25px);font-weight:600;letter-spacing:-.01em}
+h3{font-size:17px;font-weight:600}
+p{margin:0}
+small{font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+
+/* --- header --- */
+.masthead{
+  display:flex;flex-direction:column;gap:14px;
+  padding-bottom:26px;border-bottom:2px solid var(--ink);
+}
+.eyebrow{
+  font-family:var(--font-head);font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+}
+.sub{color:var(--ink-soft);font-size:16px;max-width:56ch}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px}
+.tag{
+  font-size:12.5px;font-weight:500;padding:4px 10px;border-radius:999px;
+  background:var(--surface-2);color:var(--ink-soft);border:1px solid var(--line);
+}
+
+/* --- sections --- */
+section{margin-top:44px;display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:5px}
+.sec-head .lead{color:var(--ink-soft);font-size:15px;max-width:60ch}
+
+/* --- key facts --- */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.fact{
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 15px;display:flex;flex-direction:column;gap:6px;min-width:0;
+}
+.fact .k{font-family:var(--font-head);font-size:22px;font-weight:700;letter-spacing:-.01em}
+.fact .v{font-size:14px;color:var(--ink-soft);line-height:1.45}
+
+/* --- timeline spine --- */
+.spine{
+  border-left:2px solid var(--line);
+  margin-left:7px;padding-left:24px;
+  display:flex;flex-direction:column;gap:22px;
+}
+.stop{position:relative;display:flex;flex-direction:column;gap:4px}
+.stop::before{
+  content:"";position:absolute;left:-32px;top:5px;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--paper);border:2px solid var(--accent);
+}
+.stop.end::before{background:var(--danger);border-color:var(--danger)}
+.stop .when{
+  font-family:var(--font-head);font-size:13px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
+}
+.stop.end .when{color:var(--danger)}
+.stop .what{font-weight:600;font-size:16.5px}
+.stop .note{font-size:14.5px;color:var(--ink-soft)}
+
+/* --- callouts --- */
+.call{
+  border-radius:10px;padding:15px 16px;
+  display:flex;flex-direction:column;gap:6px;
+  border:1px solid var(--line);background:var(--surface);
+}
+.call h3{display:flex;align-items:baseline;gap:8px}
+.call p{font-size:15px;line-height:1.55}
+.call.warn{background:var(--warn-soft);border-color:var(--warn-line)}
+.call.warn h3{color:var(--warn)}
+.call.danger{background:var(--danger-soft);border-color:var(--danger-line)}
+.call.danger h3{color:var(--danger)}
+.call.good{background:var(--good-soft);border-color:var(--good-line)}
+.call.good h3{color:var(--good)}
+.call.accent{background:var(--accent-soft);border-color:var(--accent)}
+.call.accent h3{color:var(--accent)}
+
+/* --- two process cards --- */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.track{
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  overflow:hidden;display:flex;flex-direction:column;min-width:0;
+}
+.track-top{
+  padding:14px 16px;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  background:var(--surface-2);
+}
+.track-top h3{font-size:16px}
+.chip{
+  font-family:var(--font-head);font-size:12px;font-weight:600;
+  padding:3px 9px;border-radius:999px;white-space:nowrap;
+  background:var(--accent);color:#fff;
+}
+:root[data-theme="dark"] .chip{color:#0D1218}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip{color:#0D1218}}
+.track ol{margin:0;padding:14px 16px 14px 32px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;line-height:1.5}
+.track ol li::marker{color:var(--accent);font-weight:600}
+.track-foot{
+  margin-top:auto;padding:12px 16px;border-top:1px dashed var(--line);
+  display:flex;flex-direction:column;gap:3px;font-size:13.5px;
+}
+.money-out{color:var(--danger);font-weight:600}
+.money-in{color:var(--good);font-weight:600}
+
+/* --- table --- */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:460px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{
+  font-family:var(--font-head);font-size:12.5px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);
+  background:var(--surface-2);
+}
+tbody tr:last-child td{border-bottom:none}
+td.lbl{font-weight:500;color:var(--ink-soft);white-space:nowrap}
+.tot td{font-weight:600;background:var(--surface-2)}
+
+/* --- numbered steps --- */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:2px}
+.step{
+  display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;
+  padding:10px 0;border-bottom:1px solid var(--line);
+}
+.step:last-child{border-bottom:none}
+.step::before{
+  counter-increment:s;content:counter(s);
+  font-family:var(--font-head);font-size:13px;font-weight:600;
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  background:var(--accent-soft);color:var(--accent);
+}
+.step .body{min-width:0;font-size:15px;line-height:1.5}
+code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;
+  background:var(--surface-2);border:1px solid var(--line);
+  padding:1px 5px;border-radius:4px;word-break:break-word;
+}
+
+/* --- checklist --- */
+.checks{display:flex;flex-direction:column;gap:2px}
+.check{
+  display:flex;gap:12px;align-items:flex-start;
+  padding:12px 14px;border:1px solid var(--line);border-radius:9px;
+  background:var(--surface);cursor:pointer;
+}
+.check + .check{margin-top:8px}
+.check input{
+  appearance:none;width:20px;height:20px;flex:0 0 20px;margin-top:1px;
+  border:2px solid var(--line);border-radius:5px;background:var(--surface);
+  cursor:pointer;display:grid;place-items:center;
+}
+.check input:checked{background:var(--good);border-color:var(--good)}
+.check input:checked::after{content:"";width:5px;height:9px;border:solid var(--surface);border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.check input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.check .txt{min-width:0;font-size:15px;line-height:1.5}
+.check .txt b{font-weight:600}
+.check .txt span{display:block;color:var(--ink-soft);font-size:13.5px;margin-top:2px}
+.check input:checked ~ .txt{opacity:.5;text-decoration:line-through;text-decoration-thickness:1px}
+
+/* --- email block --- */
+.mailbox{border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.mailbox-top{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:10px 14px;background:var(--surface-2);border-bottom:1px solid var(--line);
+}
+.mailbox-top h3{font-size:14px}
+button.copy{
+  font-family:var(--font-head);font-size:13px;font-weight:600;
+  padding:6px 13px;border-radius:7px;cursor:pointer;
+  background:var(--accent);color:#fff;border:none;
+}
+:root[data-theme="dark"] button.copy{color:#0D1218}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.copy{color:#0D1218}}
+button.copy:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+pre.mail{
+  margin:0;padding:15px 16px;overflow-x:auto;
+  font-family:var(--font-body);font-size:14px;line-height:1.65;
+  white-space:pre-wrap;word-break:break-word;
+}
+
+/* --- footer --- */
+footer{
+  margin-top:48px;padding-top:20px;border-top:1px solid var(--line);
+  display:flex;flex-direction:column;gap:10px;
+  font-size:13.5px;color:var(--ink-soft);
+}
+footer a{color:var(--accent)}
+.src{display:flex;flex-direction:column;gap:3px}
+
+@media (max-width:620px){
+  .facts{grid-template-columns:1fr}
+  .tracks{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">Beneficio de titulación · Pronabec</div>
+    <h1>Lo que tienes que saber para titularte sin perder la beca</h1>
+    <p class="sub">Resumen de la charla del 6 de noviembre de 2026, aterrizado a tu caso: Beca 18, Administración y Finanzas, USIL, egreso en diciembre 2026.</p>
+    <div class="meta-row">
+      <span class="tag">Beca 18</span>
+      <span class="tag">USIL · Ciencias Empresariales</span>
+      <span class="tag">Semestre 2026-2</span>
+      <span class="tag num">RJ N.° 577-2026-MINEDU</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>Lo esencial, en tres frases</h2>
+    </div>
+    <div class="facts">
+      <div class="fact">
+        <div class="k">Tú pagas primero</div>
+        <div class="v">Pronabec no le paga a la USIL. Solo te reembolsa después, a tu cuenta.</div>
+      </div>
+      <div class="fact">
+        <div class="k">Sin diploma, nada</div>
+        <div class="v">El diploma es el sustento del reembolso. Sin él no se puede pedir.</div>
+      </div>
+      <div class="fact">
+        <div class="k num">24 meses</div>
+        <div class="v">Es todo el plazo que tienes, y arranca con la entrega de notas del 2026-2.</div>
+      </div>
+    </div>
+    <div class="call accent">
+      <h3>Traducido</h3>
+      <p>Tienes que poner la plata de tu bolsillo, esperar el diploma, y recién ahí recuperarla — todo dentro de una ventana de dos años que empieza a correr apenas cierren notas este diciembre.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>El reloj</h2>
+      <p class="lead">El plazo no se cuenta desde tu egreso ni desde la ceremonia, sino desde el día de entrega de notas que la USIL le reporta a Pronabec.</p>
+    </div>
+    <div class="spine">
+      <div class="stop">
+        <div class="when">Punto de partida · por confirmar</div>
+        <div class="what">Entrega de notas del semestre 2026-2</div>
+        <div class="note">Estimado: fines de diciembre 2026 o enero 2027. Aún no es oficial. El ciclo 2026-1 cerró notas el 07/08/2026, como referencia.</div>
+      </div>
+      <div class="stop">
+        <div class="when">Durante la ventana</div>
+        <div class="what">Grado de bachiller, luego título profesional</div>
+        <div class="note">Los dos trámites tienen que caber acá dentro, en ese orden. El título solo se puede empezar una vez que ya eres bachiller.</div>
+      </div>
+      <div class="stop end">
+        <div class="when num">Fin del plazo · estimado</div>
+        <div class="what">Entre diciembre 2028 y enero 2029</div>
+        <div class="note">Lo que cuenta es la <b>fecha del diploma</b>, no la fecha en que iniciaste el trámite. Si el diploma sale después, ese concepto ya no se reembolsa y lo asumes tú.</div>
+      </div>
+    </div>
+    <div class="call warn">
+      <h3>Esta fecha todavía no es tuya</h3>
+      <p>Nadie te ha dado aún la fecha real. Consíguela por escrito: es el dato del que depende todo lo demás, y en enero o febrero de 2027 ya debería estar cargado en el sistema de Pronabec.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Los dos trámites</h2>
+      <p class="lead">Son independientes: cada uno tiene su propio pago, su propio diploma y su propia solicitud de reembolso.</p>
+    </div>
+    <div class="tracks">
+
+      <article class="track">
+        <div class="track-top">
+          <h3>Grado de bachiller</h3>
+          <span class="chip">Primero</span>
+        </div>
+        <ol>
+          <li>Pides en la USIL la constancia de cumplimiento de plan de estudios y el diploma de bachiller.</li>
+          <li>Pagas los dos conceptos y <b>guardas las boletas electrónicas</b>.</li>
+          <li>Esperas a que la USIL emita el diploma.</li>
+          <li>Con el diploma, pides el reembolso por Intranet con el subconcepto <code>GRADO DE BACHILLER</code>.</li>
+        </ol>
+        <div class="track-foot">
+          <div><span class="money-out num">Sale de tu bolsillo: S/ 450</span></div>
+          <div><span class="money-in num">Te lo devuelven: S/ 450</span></div>
+          <small>Constancia S/ 100 + diploma S/ 350. Ambas boletas van en la misma solicitud.</small>
+        </div>
+      </article>
+
+      <article class="track">
+        <div class="track-top">
+          <h3>Título profesional</h3>
+          <span class="chip">Después</span>
+        </div>
+        <ol>
+          <li>Eliges modalidad: tesis ordinaria o Programa de Titulación.</li>
+          <li>Pagas lo que corresponda y guardas cada boleta.</li>
+          <li>Desarrollas y sustentas la tesis.</li>
+          <li>Pagas el diploma de título y esperas que lo emitan.</li>
+          <li>Pides el reembolso con el subconcepto <code>TÍTULO PROFESIONAL</code>.</li>
+        </ol>
+        <div class="track-foot">
+          <div><span class="money-out num">Sale de tu bolsillo: S/ 3,400 o S/ 7,400</span></div>
+          <div><span class="money-in num">Te devuelven hasta ese mismo tope</span></div>
+          <small>Según la modalidad que elijas. Si pagas en cuotas, cada boleta es una línea distinta.</small>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Las dos rutas para titularte</h2>
+      <p class="lead">Administración y Finanzas está en Ciencias Empresariales, así que te aplican las dos.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th></th><th>Tesis ordinaria</th><th>Programa de Titulación</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="lbl">Qué es</td>
+            <td>Desarrollas tu tesis por cuenta propia, con un asesor asignado</td>
+            <td>Paquete con clases metodológicas, asesorías y sustentación</td>
+          </tr>
+          <tr>
+            <td class="lbl">Duración</td>
+            <td>Abierta, depende de tu avance</td>
+            <td>Unos 7 meses, con cronograma cerrado</td>
+          </tr>
+          <tr>
+            <td class="lbl">Requisito</td>
+            <td>Ser bachiller</td>
+            <td>Ser bachiller. No pide experiencia laboral</td>
+          </tr>
+          <tr>
+            <td class="lbl">Costo USIL</td>
+            <td class="num">Asesoría y sustentación por separado</td>
+            <td class="num">S/ 7,000 al contado · S/ 7,500 en 6 cuotas</td>
+          </tr>
+          <tr class="tot">
+            <td class="lbl">Tope Pronabec</td>
+            <td class="num">S/ 3,400</td>
+            <td class="num">S/ 7,400</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="call danger">
+      <h3>Si eliges el programa, paga al contado</h3>
+      <p>El tope de Pronabec son exactamente <b class="num">S/ 7,000</b>, que es el precio al contado. Si te matriculas en 6 cuotas pagas <b class="num">S/ 7,500</b> y <b>pierdes S/ 500</b>, porque el reembolso llega solo hasta el tope. Es plata que se va por elegir la forma de pago.</p>
+    </div>
+
+    <div class="call good">
+      <h3>Por qué el programa suele convenir más</h3>
+      <p>Más allá del monto, tiene cronograma cerrado y fecha de sustentación prevista. La tesis ordinaria se puede alargar sola, y si el diploma sale pasado el plazo pierdes la cobertura completa, no una parte. Si ya tienes tema, asesor y ganas de hacerla por tu cuenta, la ruta ordinaria también funciona — solo exige disciplina con el calendario.</p>
+    </div>
+
+    <div class="call">
+      <h3>La suficiencia profesional no te sirve</h3>
+      <p>Es más barata y más rápida, pero exige acreditar mínimo 2 años de experiencia profesional después de terminar el plan de estudios: calificarías recién a fines de 2028, justo cuando te vence el plazo. Y además no figura en la resolución de Pronabec, así que probablemente la pagarías entera.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Cómo se pide el reembolso</h2>
+      <p class="lead">Es el mismo procedimiento para bachiller y para título. Solo cambia el subconcepto que eliges.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="body">Entra a tu Intranet y ve al menú <b>Documentos</b>.</div></div>
+      <div class="step"><div class="body">En documentos opcionales, clic en <b>Solicitud de Reembolso a la Subvención</b>.</div></div>
+      <div class="step"><div class="body">Clic en <b>Iniciar Solicitud de Reembolso Académico</b> y completa los datos de la beca y tus datos personales.</div></div>
+      <div class="step"><div class="body">En concepto elige <code>OBTENCIÓN DEL GRADO Y/O TÍTULO RESPECTIVO O SU EQUIVALENTE</code>, y en justificación escribe el pago que estás sustentando.</div></div>
+      <div class="step"><div class="body">Llena los datos del comprobante copiados tal cual de la boleta. El RUC de la USIL es <code class="num">20297868790</code>.</div></div>
+      <div class="step"><div class="body">Adjunta los dos archivos: la <b>boleta de venta electrónica</b> y el <b>diploma</b>. Luego <b>Agregar reembolso</b> y <b>Generar Solicitud</b>.</div></div>
+      <div class="step"><div class="body">Entra a <b>Firmar Solicitud de Reembolso</b> y <b>FIRMA</b> con tu código de firma electrónica.</div></div>
+    </div>
+    <div class="call danger">
+      <h3>Generar no es presentar</h3>
+      <p>Mientras la solicitud diga <b>“Pendiente de firma”</b>, nadie la está revisando y el dinero no sale. Acá es donde más gente se queda. Verifica que el estado haya cambiado después de firmar.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Los tres errores que cuestan plata</h2>
+    </div>
+    <div class="call danger">
+      <h3>No firmar la solicitud</h3>
+      <p>Queda generada pero sin presentar, y te enteras meses después cuando preguntas por qué no llegó el reembolso.</p>
+    </div>
+    <div class="call danger">
+      <h3>Cruzar el año fiscal</h3>
+      <p>La solicitud va en el mismo año de la <b>fecha del diploma</b>, porque el presupuesto no se arrastra al año siguiente. Diploma de diciembre significa solicitar en diciembre, no en enero.</p>
+    </div>
+    <div class="call danger">
+      <h3>Perder la boleta</h3>
+      <p>Sin boleta de venta electrónica no hay reembolso, por más que tengas el diploma. Guárdalas en PDF desde el primer pago, en tu correo personal.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Qué hacer ahora</h2>
+      <p class="lead">Empieza por lo que caduca: todavía eres alumna activa, todavía tienes Intranet y todavía tienes un especialista asignado. Esas tres cosas se van apagando apenas egreses.</p>
+    </div>
+    <div class="checks">
+      <label class="check"><input type="checkbox" id="c1"><span class="txt"><b>Manda el correo al especialista esta semana</b><span>Aunque te digan que la fecha aún no está cargada, queda el hilo abierto para retomarlo en enero.</span></span></label>
+      <label class="check"><input type="checkbox" id="c2"><span class="txt"><b>Anota el nombre y correo de tu especialista fuera de la Intranet</b><span>En 2028 vas a necesitarlo y probablemente ya no tengas acceso al sistema.</span></span></label>
+      <label class="check"><input type="checkbox" id="c3"><span class="txt"><b>Descarga tu ficha de beca y el reglamento del becario</b><span>Datos de convocatoria y código de becaria, en PDF, antes de que cierre el ciclo.</span></span></label>
+      <label class="check"><input type="checkbox" id="c4"><span class="txt"><b>Verifica que tu correo personal y celular estén actualizados en Pronabec</b><span>Si quedó el correo institucional de la USIL, cámbialo ahora.</span></span></label>
+      <label class="check"><input type="checkbox" id="c5"><span class="txt"><b>Pide a la USIL el cronograma de bachiller 2027</b><span>Secretaría académica suele publicarlo en diciembre. Define todo el resto del calendario.</span></span></label>
+      <label class="check"><input type="checkbox" id="c6"><span class="txt"><b>En enero o febrero 2027, retoma el correo y cierra la fecha</b><span>Guarda la respuesta: es el documento que vale si en 2028 hay discrepancia.</span></span></label>
+    </div>
+    <small style="color:var(--ink-soft)">Las marcas se guardan solo en este dispositivo.</small>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>El correo, listo para enviar</h2>
+      <p class="lead">Mándalo desde tu correo personal, no el institucional. Reemplaza lo que está entre corchetes.</p>
+    </div>
+    <div class="mailbox">
+      <div class="mailbox-top">
+        <h3>Para tu especialista Pronabec</h3>
+        <button class="copy" id="copyBtn" type="button">Copiar</button>
+      </div>
+      <pre class="mail" id="mailText">Asunto: Consulta sobre plazo de titulación — [Nombre completo], DNI [●], Beca 18
+
+Estimado(a) [nombre del especialista]:
+
+Soy becaria de Beca 18, convocatoria [año], de la carrera de Administración y Finanzas en la Universidad San Ignacio de Loyola. Culmino mi plan de estudios en el semestre 2026-2 (diciembre 2026).
+
+Agradeceré su orientación sobre el beneficio de titulación:
+
+1. ¿Cuál es la fecha de entrega de notas del semestre 2026-2 informada por la USIL, a partir de la cual se contabilizan los 24 meses?
+
+2. En consecuencia, ¿cuál sería la fecha exacta de vencimiento de mi plazo de titulación?
+
+3. Para la USIL en mi convocatoria, ¿aplica únicamente el reembolso al becario, o también el pago directo a la IES?
+
+4. El concepto "Tesis por programa de titulación extraordinario" (S/ 7,000) de la RJ N.° 577-2026-MINEDU/VMGI-PRONABEC-OAF, ¿corresponde al Programa de Titulación de la USIL? ¿Ese tope incluye la sustentación o esta se reembolsa aparte?
+
+Quedo atenta. Muchas gracias.
+
+[Nombre completo]
+DNI [●] — Código de becaria [●]</pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Las fechas que de verdad importan</h2>
+      <p class="lead">No es la del vencimiento. Nadie pierde el beneficio el último día; lo pierde dieciocho meses antes, cuando decidió dejarlo para el próximo año. Cuando tengas la fecha oficial, pon estas tres alarmas.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Cuándo</th><th>Qué debe estar hecho</th></tr></thead>
+        <tbody>
+          <tr><td class="lbl">18 meses antes</td><td>Matriculada en el programa de titulación</td></tr>
+          <tr><td class="lbl">12 meses antes</td><td>Tesis sustentada</td></tr>
+          <tr><td class="lbl">6 meses antes</td><td>Diploma emitido y reembolso ya solicitado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="call warn">
+      <h3>El colchón no es opcional</h3>
+      <p>Entre que sustentas y que el diploma existe físicamente pasan meses. Apunta a tener el diploma de título <b>en la mano a mediados de 2028</b>. Si el plazo real resulta más generoso, mejor — pero no planifiques al filo, porque pasado el vencimiento no hay apelación.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Dos cosas por confirmar</b> con tu especialista: si el “programa de titulación extraordinario” de la resolución es el Programa de Titulación de la USIL, y si el tope de S/ 7,000 incluye la sustentación o esa se reembolsa aparte.</p>
+    <div class="src">
+      <span>Fuentes: charla Pronabec del 06/11/2026 · <a href="https://youtu.be/OICpe6ijafw" target="_blank" rel="noopener">grabación</a> · RJ N.° 577-2026-MINEDU/VMGI-PRONABEC-OAF · <a href="https://usil.edu.pe/landings/pregrado/titulacion/" target="_blank" rel="noopener">Programa de Titulación USIL</a></span>
+      <span>Los montos y fechas de la USIL pueden cambiar. Confirma siempre con la universidad y con Pronabec antes de pagar.</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var boxes = document.querySelectorAll('.check input[type="checkbox"]');
+  var KEY = 'titulacion-nicol-checks';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+  boxes.forEach(function(b){
+    if (saved[b.id]) b.checked = true;
+    b.addEventListener('change', function(){
+      var state = {};
+      boxes.forEach(function(x){ if (x.checked) state[x.id] = 1; });
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+    });
+  });
+
+  var btn = document.getElementById('copyBtn');
+  var pre = document.getElementById('mailText');
+  function flash(msg){
+    var old = btn.textContent;
+    btn.textContent = msg;
+    setTimeout(function(){ btn.textContent = old; }, 1600);
+  }
+  btn.addEventListener('click', function(){
+    var text = pre.textContent;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ flash('Copiado'); }).catch(function(){ select(); });
+    } else { select(); }
+    function select(){
+      var r = document.createRange();
+      r.selectNodeContents(pre);
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+      flash('Selecciónalo');
+    }
+  });
+})();
+</script>
+</body>
+</html>
